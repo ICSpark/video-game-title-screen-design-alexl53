@@ -22,3 +22,28 @@ body {
   flex-direction: column;
   justify-content: center
 }
+@font-face {
+  font-family: 'minecraftregular';
+  src: url('https://fonts.cdnfonts.com/s/25041/1_MinecraftRegular1.woff') format('woff');
+}
+@keyframes text {
+  0% {
+    transform:scale(1) rotate(-30deg);
+  }
+  50% {
+    transform:scale(0.9) rotate(-30deg);
+  }
+  100% {
+    transform:scale(1) rotate(-30deg);
+  }
+}
+#splash {
+  font-family: 'minecraftregular', sans-serif;
+  font-size: 20px;
+  color: #fafd11;
+  text-shadow: 1px 2px #463903;
+  position: absolute;
+  left: 1100px;
+  top: 100px;
+  animation: text 2s infinite;
+}
